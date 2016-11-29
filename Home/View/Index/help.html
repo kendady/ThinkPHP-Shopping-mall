@@ -1,0 +1,335 @@
+<include file='Public/header' />
+<div style="background: rgb(223, 224, 228) url('images/5796c454n0440586b.png') no-repeat scroll center center;" class="help-banner hide"></div>
+<script src="__PUBLIC__/Home/js/jquery-1.11.1.min.js"></script>
+<script src="__PUBLIC__/Home/js/jquery.cookie.js"></script>
+<script type="text/javascript">
+    
+    if(getCookie("_banner_") == ""){
+        $(".help-banner").show();
+        setTimeout(function () {
+            $(".help-banner").slideUp(1000)
+        }, 5000)
+        setCookie("_banner_",1,30,"/","help.jd.com");
+    }
+
+    function setCookie(name,value,expires,path,domain){
+        var strsec = expires * 24 * 60 *60 * 1000;
+        var exp = new Date();
+        exp.setTime(exp.getTime() + strsec*1)
+        var cookieStr = name + "=" + value + ";" + "expires" + "=" + exp.toUTCString() + ";" + "path" + "=" + path + ";" + "domain" + "=" + domain ;
+        document.cookie = cookieStr;
+    }
+
+    function getCookie(name){
+        var result = "";
+        var cookies = document.cookie;
+        var cookieList = cookies.split(";");
+        for(var index in cookieList){
+            var cookie = cookieList[index];
+            var temps = cookie.split("=");
+            var t_name = temps[0];
+            var t_value = temps[1];
+            var trimT_Name = trim(t_name);
+            var trimName = trim(name);
+            if(trimT_Name == trimName){
+                result = t_value;
+            }
+        }
+        return result;
+    }
+
+    function trim(str){ //删除左右两端的空格
+        return str.replace(/(^\s*)|(\s*$)/g, "");
+    }
+</script>   
+<div class="bgcolor02">
+    <div class="w">
+            <div class="m mod-h01 self-service-box">
+    <div class="mt">
+        <h3 class="title">
+            常用自助服务
+        </h3>
+    </div>
+    <div class="mc">
+        <dl class="self-service-list">
+            <dt class="ds-icon">
+                <a class="link-img link-img01" href="//order.jd.com/center/list.action" target="_blank" clstag="pageclick|keycount|index_201502102|7"></a>
+            </dt>
+            <dd class="ds-content">
+                <h3 class="ds-name">
+                    <a href="//order.jd.com/center/list.action" target="_blank" clstag="pageclick|keycount|index_201502102|7">查询订单</a>
+                </h3>
+                <p class="text">
+                    快速查看订单详情、配送进度、确认收货等
+                </p>
+            </dd>
+        </dl>
+        <dl class="self-service-list">
+            <dt class="ds-icon">
+                <a class="link-img link-img02" href="//myjd-crm.jd.com/reminder/reminderlist.action" target="_blank" clstag="pageclick|keycount|index_201502102|8"></a>
+            </dt>
+            <dd class="ds-content">
+                <h3 class="ds-name">
+                    <a href="//myjd-crm.jd.com/reminder/reminderlist.action" target="_blank" clstag="pageclick|keycount|index_201502102|8">我要催单</a>
+                </h3>
+                <p class="text">
+                    催发货、催配送、1小时快速答复
+                </p>
+            </dd>
+        </dl>
+        <dl class="self-service-list">
+            <dt class="ds-icon">
+                <a class="link-img link-img03" href="//help.jd.com/user/issue/103-983.html" target="_blank" clstag="pageclick|keycount|index_201502102|9"></a>
+            </dt>
+            <dd class="ds-content">
+                <h3 class="ds-name">
+                    <a href="//help.jd.com/user/issue/103-983.html" target="_blank" clstag="pageclick|keycount|index_201502102|9">配送服务查询</a>
+                </h3>
+                <p class="text">
+                    查看您所在地址支持的配送服务类型和时效
+                </p>
+            </dd>
+        </dl>
+        <dl class="self-service-list">
+            <dt class="ds-icon">
+                <a class="link-img link-img04" href="//help.jd.com/user/issue/321-981.html" target="_blank" clstag="pageclick|keycount|index_201502102|10"></a>
+            </dt>
+            <dd class="ds-content">
+                <h3 class="ds-name">
+                    <a href="//help.jd.com/user/issue/321-981.html" target="_blank" clstag="pageclick|keycount|index_201502102|10">查询售后政策</a>
+                </h3>
+                <p class="text">
+                    查看退换货/维修规则、处理流程
+                </p>
+            </dd>
+        </dl>
+        <dl class="self-service-list">
+            <dt class="ds-icon">
+                <a class="link-img link-img05" href="//myjd.jd.com/afs/indexNew.action" target="_blank" clstag="pageclick|keycount|index_201502102|11"></a>
+            </dt>
+            <dd class="ds-content">
+                <h3 class="ds-name">
+                    <a href="//myjd.jd.com/afs/indexNew.action" target="_blank" clstag="pageclick|keycount|index_201502102|11">申请退换货</a>
+                </h3>
+                <p class="text">
+                    快速提交退换货/维修申请查看处理进度、退款记录
+                </p>
+            </dd>
+        </dl>
+        <dl class="self-service-list">
+            <dt class="ds-icon">
+                <a class="link-img link-img06" href="//mymoney.jd.com/finance/recently.action" target="_blank" clstag="pageclick|keycount|index_201502102|12"></a>
+            </dt>
+            <dd class="ds-content">
+                <h3 class="ds-name">
+                    <a href="//mymoney.jd.com/finance/recently.action" target="_blank" clstag="pageclick|keycount|index_201502102|12">查询余额</a>
+                </h3>
+                <p class="text">
+                    查询账户余额、消费记录、退款明细、余额充值
+                </p>
+            </dd>
+        </dl>
+        <dl class="self-service-list">
+            <dt class="ds-icon">
+                <a class="link-img link-img07" href="//order.jd.com/center/list.action" target="_blank" clstag="pageclick|keycount|index_201502102|13"></a>
+            </dt>
+            <dd class="ds-content">
+                <h3 class="ds-name">
+                    <a href="//order.jd.com/center/list.action" target="_blank" clstag="pageclick|keycount|index_201502102|13">取消订单</a>
+                </h3>
+                <p class="text">
+                    申请取消订单、终止发货（限自营商品）
+                </p>
+            </dd>
+        </dl>
+        <dl class="self-service-list">
+            <dt class="ds-icon">
+                <a class="link-img link-img08" href="//safe.jd.com/user/paymentpassword/safetyCenter.action" target="_blank" clstag="pageclick|keycount|index_201502102|14"></a>
+            </dt>
+            <dd class="ds-content">
+                <h3 class="ds-name">
+                    <a href="//safe.jd.com/user/paymentpassword/safetyCenter.action" target="_blank" clstag="pageclick|keycount|index_201502102|14">账户安全</a>
+                </h3>
+                <p class="text">
+                    修改密码、绑定手机、提高账户安全等
+                </p>
+            </dd>
+        </dl>
+    </div>
+</div>
+    </div>
+</div>
+<div class="bgcolor03">
+    <div class="w">
+            <div class="m mod-h01 hot-topic-box">
+    <div class="mt">
+        <h3 class="title">
+            热点问题
+        </h3>
+    </div>
+    <div class="mc">
+        <div id="tab" class="tabs">
+            <ul class="tab-list">
+                <li class="list-item current">
+                    购买咨询<strong class="icon01"></strong>
+                </li>
+                <li class="list-item">
+                    配送查询<strong class="icon01"></strong>
+                </li>
+                <li class="list-item">
+                    付款及退款<strong class="icon01"></strong>
+                </li>
+                <li class="list-item">
+                    售后规则<strong class="icon01"></strong>
+                </li>
+                <li class="list-item">
+                    账户与资产<strong class="icon01"></strong>
+                </li>
+                <li class="list-item">
+                    其它<strong class="icon01"></strong>
+                </li>
+            </ul>
+            <div class="tabcons">
+                <div class="tabcon">
+                    <ul class="hot-topic-list">
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/75-244.html" target="_blank" clstag="pageclick|keycount|index_201502102|15">下单后可以修改订单吗？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/64-245.html" target="_blank" clstag="pageclick|keycount|index_201502102|16">订单如何取消？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/45-246.html" target="_blank" clstag="pageclick|keycount|index_201502102|17">无货商品几天可以到货？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/248-283.html" target="_blank" clstag="pageclick|keycount|index_201502102|18">合约机是什么？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/454-1578.html" target="_blank" clstag="pageclick|keycount|index_201502102|19">定制、预售商品，卖家未按约定时间发货怎么办？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/44-248.html" target="_blank" clstag="pageclick|keycount|index_201502102|20">如何联系商家？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/263-247.html" target="_blank" clstag="pageclick|keycount|index_201502102|21">可以开发票吗？</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabcon hide">
+                    <ul class="hot-topic-list">
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/264-249.html" target="_blank" clstag="pageclick|keycount|index_201502102|22">收到的商品少了/发错货了怎么办？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/435-1492.html" target="_blank" clstag="pageclick|keycount|index_201502102|23">京东地址库升级说明</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/56-276.html" target="_blank" clstag="pageclick|keycount|index_201502102|24">订单怎么一直显示正在出库？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/103-255.html" target="_blank" clstag="pageclick|keycount|index_201502102|25">配送和快递方式有哪些？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/103-254.html" target="_blank" clstag="pageclick|keycount|index_201502102|26">能否送货上门？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/104-253.html" target="_blank" clstag="pageclick|keycount|index_201502102|27">我的包裹现在到哪里了？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/104-252.html" target="_blank" clstag="pageclick|keycount|index_201502102|28">我能指定一个快递公司送货吗？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/100-251.html" target="_blank" clstag="pageclick|keycount|index_201502102|29">自提点在哪里？</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabcon hide">
+                    <ul class="hot-topic-list">
+                        <li class="list-item01">
+                            <a class="bg-icon" href="#" target="_blank" clstag="pageclick|keycount|index_201502102|30">取消订单/退货后怎么退款给我？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="#" target="_blank" clstag="pageclick|keycount|index_201502102|31">白条怎么开通？怎么激活？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/231-258.html" target="_blank" clstag="pageclick|keycount|index_201502102|32">支付方式有哪些？如何支付？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/130-259.html" target="_blank" clstag="pageclick|keycount|index_201502102|33">退款多久可以到账？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/130-264.html" target="_blank" clstag="pageclick|keycount|index_201502102|34">余额提现怎么操作？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/130-263.html" target="_blank" clstag="pageclick|keycount|index_201502102|35">退款怎么查询？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/265-261.html" target="_blank" clstag="pageclick|keycount|index_201502102|36">京东E卡如何绑定？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/200-260.html" target="_blank" clstag="pageclick|keycount|index_201502102|37">白条怎么使用？怎么还款？</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabcon hide">
+                    <ul class="hot-topic-list">
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/127-273.html" target="_blank" clstag="pageclick|keycount|index_201502102|38">什么情况下可以退货/换货/维修？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/118-265.html" target="_blank" clstag="pageclick|keycount|index_201502102|39">如何申请退货/换货？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/119-272.html" target="_blank" clstag="pageclick|keycount|index_201502102|40">退货/换货/维修分别需要多长时间？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/131-271.html" target="_blank" clstag="pageclick|keycount|index_201502102|41">退货/换货运费怎么算？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/239-274.html" target="_blank" clstag="pageclick|keycount|index_201502102|42">大家电可以上门安装吗？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/124-269.html" target="_blank" clstag="pageclick|keycount|index_201502102|43">退货/换货地址是哪里？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/239-275.html" target="_blank" clstag="pageclick|keycount|index_201502102|44">大家电安装费用怎么算？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/123-268.html" target="_blank" clstag="pageclick|keycount|index_201502102|45">已经提交退货/换货申请，在哪里能查看到进度？</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabcon hide">
+                    <ul class="hot-topic-list">
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/164-278.html" target="_blank" clstag="pageclick|keycount|index_201502102|46">如何修改密码？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/164-279.html" target="_blank" clstag="pageclick|keycount|index_201502102|47">如何验证手机？如何绑定手机？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/164-280.html" target="_blank" clstag="pageclick|keycount|index_201502102|48">支付密码如何开启？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/164-281.html" target="_blank" clstag="pageclick|keycount|index_201502102|49">如何提高账户安全等级？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/165-282.html" target="_blank" clstag="pageclick|keycount|index_201502102|50">忘记账户或昵称怎么办？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/169-266.html" target="_blank" clstag="pageclick|keycount|index_201502102|51">优惠券怎么使用？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/169-267.html" target="_blank" clstag="pageclick|keycount|index_201502102|52">在哪里查询优惠券？</a>
+                        </li>
+                        <li class="list-item01">
+                            <a class="bg-icon" href="//help.jd.com/user/issue/170-277.html" target="_blank" clstag="pageclick|keycount|index_201502102|53">我的余额怎么查看？白条怎么查看？</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<include file='Public/footer' />

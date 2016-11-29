@@ -1,0 +1,126 @@
+<include file='Public/header' />
+<div class="block2 clearfix">
+<div class="ur_here blank">
+当前位置: <a href="">首页</a> 
+<code>&gt;</code> 
+<foreach name="gnav" item='gnav'>
+<a href="">{$gnav['cat_name']}</a> 
+<code>&gt;</code>
+</foreach>
+ {$goods_info['goods_name']}</div> 
+ <div class="clearfix">
+	  <div class="goodsimgbox fl">
+		<div id="focuscont">
+     <a style="border: 1px solid rgb(210, 208, 208); width: 400px; height: 400px; display: block; padding: 0px; position: relative; outline: 0px; text-decoration: none;" href="{$goods_info['goods_img']}" id="zoom1" class="MagicZoom MagicThumb" title="ECSHOP模板中心68ecshop.com测试商品">
+        <img src="{$goods_info['goods_img']}" alt="ECSHOP模板中心68ecshop.com测试商品" width="400" height="400" style="margin:0;" id="sim974895">
+     <div id="bc974895" class="MagicZoomBigImageCont" style="width: 310px; height: 310px; overflow: hidden; z-index: 100; visibility: hidden; position: absolute; top: -10000px; left: 415px;"><div class="MagicZoomHeader" id="MagicZoomHeaderbc974895" style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px;">ECSHOP模板中心68ecshop.com测试商品</div><div style="overflow: hidden;"><img src="__PUBLIC__/Home/images/32_G_1370338389558.jpg" style="position: relative; border-width: 0px; padding: 0px; left: 0px; top: 0px;"></div><div style="color: rgb(255, 0, 0); font-size: 10px; font-weight: bold; font-family: Tahoma; position: absolute; width: 100%; text-align: center; left: 0px; top: 290px;"></div></div><div class="MagicZoomPup" style="z-index: 10; visibility: hidden; position: absolute; opacity: 0.05; width: 98px; height: 98px;"></div></a>         		 
+	   </div>
+    <div class="picture" id="imglist">		       
+    </div>  
+		</div>
+		<div class="goodstxtbox fr" style="width:550px; overflow:hidden">
+		<h4 class="goodName">
+		 {$goods_info['goods_name']}<div class="prev">
+        <a href="" style="color:#CCC; font-size:12px;">下一个</a>
+        </div>
+		 </h4>
+		 <form class="goodsform" action="" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY">
+			<p class="goodsInfo">
+            <span>商品货号：{$goods_info['goods_sn']}</span>
+            <span>商品库存： {$goods_info['goods_number']} 台</span>
+            <span>商品品牌：<a href=""><u>{$goods_info['goods_name']}</u></a></span>
+            <span>商品重量：{$goods_info['goods_weight']}克</span>
+            <span>上架时间：{$goods_info['add_time']}</span>
+            <span>商品点击数：{$goods_info['click_count']}</span>
+            <span>用户评价： <img src="__PUBLIC__/Home/images/stars5.gif" alt="comment rank 5">
+            </span>
+			</p>
+			<div class="Goodpromotion" style="float:left; width:550px; border-left:none; border-right:none;">
+			<font style="font-size:12px;">本店售价：</font><font class="price" id="ECS_SHOPPRICE" style="font-size:20px;">￥{$goods_info['shop_price']}元</font><br>
+            <font class="goodspice" style="color:#CCC">市场价格：<span class="market">￥{$goods_info['market_price']}元</span></font><br>
+			<div class="blank"></div>
+			<a href="{:U('Home/Goods/checkOut',array('goods_id'=>$goods_info['goods_id']))}"><img src="__PUBLIC__/Home/images/bnt_buy.gif"></a> 
+            </div>
+		</form>
+		</div>
+	</div>
+	<div class="infotit clearfix" id="com_b">
+	    <h2 style="cursor: pointer;">商品描述</h2>
+	</div>
+	 <div class="tagcontent" id="com_v">
+       
+       
+        {$goods_info['goods_desc']}
+       </div>           
+	 <div id="ECS_COMMENT"> <div class="clearfix" style="border:1px solid #C9DCEF; border-top:2px solid #509d0e">
+<h2 style=" margin:10px 0px 0px 20px; font-size:14px; color:#333333">用户评论</h2>
+ <if condition="$comment eq null">
+ <div class="tips">暂时还没有任何用户评论</div>
+ <else />
+ <foreach name="comment" item='comment'>
+    <table>
+        <tr>
+            <td><h2 style=" margin:10px 0px 0px 20px; font-size:12px; color:#333333">{$comment['user_id']}</h2></td>
+            <td>{$comment['content']}</td>
+        </tr>
+    </table>
+ </foreach>
+ </if>
+<div class="Goodpromotion blank">
+      <form action="{:U('Home/Goods/addComment')}" method="post" name="commentForm" id="commentForm">
+       <table border="0" cellspacing="5" cellpadding="0">
+        <tbody>
+     <tr>
+       <!-- <td align="right">用户名：</td> -->
+       <td><input type="checkbox" check="check">匿名评价</td>
+     </tr>
+     <tr></tr>
+       <!--  <tr>
+         <td align="right">评价等级：</td>
+         <td>
+         <input name="comment_rank" type="radio" value="1" id="comment_rank1"> <img src="__PUBLIC__/Home/images/stars1.gif">
+         <input name="comment_rank" type="radio" value="2" id="comment_rank2"> <img src="__PUBLIC__/Home/images/stars2.gif">
+         <input name="comment_rank" type="radio" value="3" id="comment_rank3"> <img src="__PUBLIC__/Home/images/stars3.gif">
+         <input name="comment_rank" type="radio" value="4" id="comment_rank4"> <img src="__PUBLIC__/Home/images/stars4.gif">
+         <input name="comment_rank" type="radio" value="5" checked="checked" id="comment_rank5"> <img src="__PUBLIC__/Home/images/stars5.gif">
+         </td>
+       </tr> -->
+        <tr>
+          <td align="right" valign="top">评论内容：</td>
+          <td>
+         <!--  <textarea name="content" class="InputBorder" cols="80" rows="3"></textarea> -->
+        <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+        <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"> </script>
+        <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+        <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+        <div>
+            <script id="editor" name="content" type="text/plain" style="width:800px;height:150px;"></script>
+        </div>
+        <script type="text/javascript">
+            var ue = UE.getEditor('editor');
+        </script>
+         <!--  <input type="hidden" name="cmt_type" value="0"> -->
+          <input type="hidden" name="goods_id" value="{$goods_info['goods_id']}">
+          </td>
+        </tr>
+        <tr></tr>
+         <tr>
+            <td>电脑晒图</td> 
+            <td><input type="file" ></td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td colspan="2">
+          <!--           <div class="captcha fl">
+                    验证码：<input type="text" name="captcha" size="10" class="InputBorder">
+                    <img src="__PUBLIC__/Home/images/captcha.php" alt="captcha" >
+                    </div> -->
+            <input name="" type="submit" value="提交评论" class="bnt_number4 fr">
+          </td>
+        </tr>
+      </tbody></table>
+      </form>
+</div>
+</div>
+</div>
+<include file='Public/footer' />

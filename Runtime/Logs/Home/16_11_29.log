@@ -1,0 +1,2402 @@
+[ 2016-11-29T18:48:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.3000s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.1070s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.2030s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_best=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_new=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.026002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2016-11-29T18:48:54+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=3 )  [ RunTime:0.0160s ]
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 14 行.
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 3 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:48:54+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:48:54+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T18:48:55+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:48:56+08:00 ] 127.0.0.1 /Home/Goods/goods/goods_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0790s ]
+SQL: SELECT * FROM `comment` WHERE ( 1=1 AND goods_id='8' )  [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:48:57+08:00 ] 127.0.0.1 /Home/Goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.2560s ]
+NOTIC: [8] Undefined index: cat_id D:\xampp\htdocs\shop\Home\Controller\GoodsController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat` LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 89 行.
+NOTIC: [8] Undefined index: goods_img D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 93 行.
+NOTIC: [8] Undefined index: goods_img D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 94 行.
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 102 行.
+NOTIC: [8] Undefined index: goods_sn D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 108 行.
+NOTIC: [8] Undefined index: goods_number D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 109 行.
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 110 行.
+NOTIC: [8] Undefined index: goods_weight D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 111 行.
+NOTIC: [8] Undefined index: click_count D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 113 行.
+NOTIC: [8] Undefined index: shop_price D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 118 行.
+NOTIC: [8] Undefined index: market_price D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 119 行.
+NOTIC: [8] Undefined index: goods_id D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 121 行.
+NOTIC: [8] Undefined index: goods_desc D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 132 行.
+NOTIC: [8] Undefined index: goods_id D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:48:57+08:00 ] 127.0.0.1 /Home/Goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: cat_id D:\xampp\htdocs\shop\Home\Controller\GoodsController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 89 行.
+NOTIC: [8] Undefined index: goods_img D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 93 行.
+NOTIC: [8] Undefined index: goods_img D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 94 行.
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 102 行.
+NOTIC: [8] Undefined index: goods_sn D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 108 行.
+NOTIC: [8] Undefined index: goods_number D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 109 行.
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 110 行.
+NOTIC: [8] Undefined index: goods_weight D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 111 行.
+NOTIC: [8] Undefined index: click_count D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 113 行.
+NOTIC: [8] Undefined index: shop_price D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 118 行.
+NOTIC: [8] Undefined index: market_price D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 119 行.
+NOTIC: [8] Undefined index: goods_id D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 121 行.
+NOTIC: [8] Undefined index: goods_desc D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 132 行.
+NOTIC: [8] Undefined index: goods_id D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:48:58+08:00 ] 127.0.0.1 /Home/Goods/goods/goods_id/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T18:48:58+08:00 ] 127.0.0.1 /Home/Goods/goods/goods_id/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T18:48:58+08:00 ] 127.0.0.1 /Home/Goods/goods/goods_id/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:00+08:00 ] 127.0.0.1 /Home/Goods/checkOut/goods_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 8 LIMIT 1   [ RunTime:0.0050s ]
+
+[ 2016-11-29T18:49:00+08:00 ] 127.0.0.1 /Home/Goods/checkout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: market_shop D:\xampp\htdocs\shop\Runtime\Cache\Home\7bb6b061dfdbdd4dd3cfac4ab9136946.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011001s ]
+
+[ 2016-11-29T18:49:00+08:00 ] 127.0.0.1 /Home/Goods/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+ERR: 非法操作:api
+
+[ 2016-11-29T18:49:01+08:00 ] 127.0.0.1 /Home/Goods/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:49:01+08:00 ] 127.0.0.1 /Home/Goods/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:49:06+08:00 ] 127.0.0.1 /Home/Goods/done.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ordinfo` [ RunTime:0.2730s ]
+NOTIC: [8] Undefined index: validate D:\xampp\htdocs\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\xampp\htdocs\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ordinfo` (`user_id`,`email`,`code`,`mobile`,`address`,`note`,`ord_sn`,`money`,`ordtime`) VALUES ('0','','0','','','','2016-11-291269','399','1480416545') [ RunTime:0.1310s ]
+SQL: SHOW COLUMNS FROM `ordgoods` [ RunTime:0.0340s ]
+SQL: INSERT INTO `ordgoods` (`ordinfo_id`,`goods_id`,`goods_name`,`shop_price`,`goods_num`) VALUES ('40','8','飞利浦9@9v','399.00','1') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:06+08:00 ] 127.0.0.1 /Home/Goods/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:api
+
+[ 2016-11-29T18:49:22+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=5 )  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:22+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/images/201501/goods_img/33_G_1421103122720.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:22+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:23+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=3 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:24+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:24+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0030s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_best=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_new=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:24+08:00 ] 127.0.0.1 /Home/Index/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:api
+
+[ 2016-11-29T18:49:24+08:00 ] 127.0.0.1 /Home/Index/themes/68ecshop_hechafre/Public/Home/images/sdgg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:24+08:00 ] 127.0.0.1 /Home/Index/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T18:49:24+08:00 ] 127.0.0.1 /Home/Index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:26+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=3 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:49:26+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:26+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=5 )  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:49:26+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/images/201501/goods_img/33_G_1421103122720.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:26+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:27+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0030s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=8 )  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:27+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:27+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T18:49:27+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:28+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=8 )  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:28+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:29+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0180s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=8 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2016-11-29T18:49:29+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0190s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:30+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0150s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=8 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-11-29T18:49:30+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0140s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:34+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_best=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_new=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:34+08:00 ] 127.0.0.1 /Home/Index/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:api
+
+[ 2016-11-29T18:49:34+08:00 ] 127.0.0.1 /Home/Index/themes/68ecshop_hechafre/Public/Home/images/sdgg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T18:49:36+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=17 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:36+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:37+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=2 )  [ RunTime:0.0010s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=17 )  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:37+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0080s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:39+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0150s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_best=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_new=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2016-11-29T18:49:39+08:00 ] 127.0.0.1 /Home/Index/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:api
+
+[ 2016-11-29T18:49:39+08:00 ] 127.0.0.1 /Home/Index/themes/68ecshop_hechafre/Public/Home/images/sdgg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-11-29T18:49:41+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0150s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=5 )  [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 5 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-11-29T18:49:41+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/images/201501/goods_img/33_G_1421103122720.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:49:41+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0150s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:45+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0030s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=5 )  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:49:45+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/images/201501/goods_img/33_G_1421103122720.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T18:49:45+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:46+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=5 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:46+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/images/201501/goods_img/33_G_1421103122720.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:46+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:47+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=8 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:47+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:49+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0140s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=8 )  [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2016-11-29T18:49:49+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0190s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:49:50+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0150s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_best=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_new=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020001s ]
+
+[ 2016-11-29T18:49:50+08:00 ] 127.0.0.1 /Home/Index/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033002s ]
+ERR: 非法操作:api
+
+[ 2016-11-29T18:49:50+08:00 ] 127.0.0.1 /Home/Index/themes/68ecshop_hechafre/Public/Home/images/sdgg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:55+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=16 )  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:49:55+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:50:02+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0190s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=4 )  [ RunTime:0.0020s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=16 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2016-11-29T18:50:02+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0160s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:50:03+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=4 )  [ RunTime:0.0010s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=16 )  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:50:03+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0030s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_best=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_new=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:52:28+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0150s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=3 )  [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-11-29T18:52:28+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:29+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=5 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:52:29+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/images/201501/goods_img/33_G_1421103122720.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:52:29+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0090s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:30+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=8 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:52:30+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0080s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:31+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=8 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:52:31+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:31+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=8 )  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-29T18:52:31+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0030s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:33+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0180s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=8 )  [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-11-29T18:52:33+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0150s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:37+08:00 ] 127.0.0.1 /Home/Goods/goods/goods_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `comment` WHERE ( 1=1 AND goods_id='4' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:52:37+08:00 ] 127.0.0.1 /Home/Goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: cat_id D:\xampp\htdocs\shop\Home\Controller\GoodsController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cat` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 89 行.
+NOTIC: [8] Undefined index: goods_img D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 93 行.
+NOTIC: [8] Undefined index: goods_img D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 94 行.
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 102 行.
+NOTIC: [8] Undefined index: goods_sn D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 108 行.
+NOTIC: [8] Undefined index: goods_number D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 109 行.
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 110 行.
+NOTIC: [8] Undefined index: goods_weight D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 111 行.
+NOTIC: [8] Undefined index: click_count D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 113 行.
+NOTIC: [8] Undefined index: shop_price D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 118 行.
+NOTIC: [8] Undefined index: market_price D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 119 行.
+NOTIC: [8] Undefined index: goods_id D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 121 行.
+NOTIC: [8] Undefined index: goods_desc D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 132 行.
+NOTIC: [8] Undefined index: goods_id D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-29T18:52:38+08:00 ] 127.0.0.1 /Home/Goods/checkOut/goods_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-29T18:52:38+08:00 ] 127.0.0.1 /Home/Goods/checkout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: market_shop D:\xampp\htdocs\shop\Runtime\Cache\Home\7bb6b061dfdbdd4dd3cfac4ab9136946.php 第 101 行.
+NOTIC: [8] Undefined index: market_shop D:\xampp\htdocs\shop\Runtime\Cache\Home\7bb6b061dfdbdd4dd3cfac4ab9136946.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:52:38+08:00 ] 127.0.0.1 /Home/Goods/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:api
+
+[ 2016-11-29T18:52:39+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0120s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_best=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_new=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011000s ]
+
+[ 2016-11-29T18:52:39+08:00 ] 127.0.0.1 /Home/Index/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+ERR: 非法操作:api
+
+[ 2016-11-29T18:52:39+08:00 ] 127.0.0.1 /Home/Index/themes/68ecshop_hechafre/Public/Home/images/sdgg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-11-29T18:52:43+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=5 )  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:52:43+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/images/201501/goods_img/33_G_1421103122720.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T18:52:43+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:48+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=5 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:52:48+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/images/201501/goods_img/33_G_1421103122720.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:52:48+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:49+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=8 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:52:49+08:00 ] 127.0.0.1 /Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:51+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0170s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=5 )  [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 5 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026001s ]
+
+[ 2016-11-29T18:52:51+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/images/201501/goods_img/33_G_1421103122720.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-11-29T18:52:51+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0210s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:51+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0200s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=3 )  [ RunTime:0.0080s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 3 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-11-29T18:52:52+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0220s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:52+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0180s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_best=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_new=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T18:52:53+08:00 ] 127.0.0.1 /Home/Index/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:api
+
+[ 2016-11-29T18:52:53+08:00 ] 127.0.0.1 /Home/Index/themes/68ecshop_hechafre/Public/Home/images/sdgg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:52:56+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0160s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=4 )  [ RunTime:0.0020s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=16 )  [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028002s ]
+
+[ 2016-11-29T18:52:57+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0150s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:52:59+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_best=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`market_price`,`thumb_img`,`goods_img` FROM `goods` WHERE ( is_new=1 ) ORDER BY goods_id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-29T18:52:59+08:00 ] 127.0.0.1 /Home/Index/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:api
+
+[ 2016-11-29T18:52:59+08:00 ] 127.0.0.1 /Home/Index/themes/68ecshop_hechafre/Public/Home/images/sdgg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:53:00+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=3 )  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CatController::cat_nav(), called in D:\xampp\htdocs\shop\Home\Controller\CatController.class.php on line 17 and defined D:\xampp\htdocs\shop\Home\Controller\CatController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 98 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+NOTIC: [8] Undefined index: goods_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 214 行.
+NOTIC: [8] Undefined index: shop_price) D:\xampp\htdocs\shop\Runtime\Cache\Home\52aa755a9958eb0beef8b384d461b9a1.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:53:00+08:00 ] 127.0.0.1 /Home/Cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_id`,`goods_name`,`goods_img`,`shop_price`,`market_price` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2016-11-29T18:53:03+08:00 ] 127.0.0.1 /Home/Goods/goods/goods_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `comment` WHERE ( 1=1 AND goods_id='8' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:53:03+08:00 ] 127.0.0.1 /Home/Goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: cat_id D:\xampp\htdocs\shop\Home\Controller\GoodsController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cat` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 89 行.
+NOTIC: [8] Undefined index: goods_img D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 93 行.
+NOTIC: [8] Undefined index: goods_img D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 94 行.
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 102 行.
+NOTIC: [8] Undefined index: goods_sn D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 108 行.
+NOTIC: [8] Undefined index: goods_number D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 109 行.
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 110 行.
+NOTIC: [8] Undefined index: goods_weight D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 111 行.
+NOTIC: [8] Undefined index: click_count D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 113 行.
+NOTIC: [8] Undefined index: shop_price D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 118 行.
+NOTIC: [8] Undefined index: market_price D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 119 行.
+NOTIC: [8] Undefined index: goods_id D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 121 行.
+NOTIC: [8] Undefined index: goods_desc D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 132 行.
+NOTIC: [8] Undefined index: goods_id D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-29T18:53:15+08:00 ] 127.0.0.1 /Home/Goods/addComment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\xampp\htdocs\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\xampp\htdocs\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `comment` (`goods_id`,`content`) VALUES ('8','<p>大幅度</p>') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-29T18:53:18+08:00 ] 127.0.0.1 /Home/Goods/goods/goods_id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `comment` WHERE ( 1=1 AND goods_id='8' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 3 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cat` WHERE `cat_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011001s ]
+
+[ 2016-11-29T18:53:19+08:00 ] 127.0.0.1 /Home/Goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: cat_id D:\xampp\htdocs\shop\Home\Controller\GoodsController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cat` LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 89 行.
+NOTIC: [8] Undefined index: goods_img D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 93 行.
+NOTIC: [8] Undefined index: goods_img D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 94 行.
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 102 行.
+NOTIC: [8] Undefined index: goods_sn D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 108 行.
+NOTIC: [8] Undefined index: goods_number D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 109 行.
+NOTIC: [8] Undefined index: goods_name D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 110 行.
+NOTIC: [8] Undefined index: goods_weight D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 111 行.
+NOTIC: [8] Undefined index: click_count D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 113 行.
+NOTIC: [8] Undefined index: shop_price D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 118 行.
+NOTIC: [8] Undefined index: market_price D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 119 行.
+NOTIC: [8] Undefined index: goods_id D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 121 行.
+NOTIC: [8] Undefined index: goods_desc D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 132 行.
+NOTIC: [8] Undefined index: goods_id D:\xampp\htdocs\shop\Runtime\Cache\Home\2af645ae5775a1426ad1890797305e12.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
